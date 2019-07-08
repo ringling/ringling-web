@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>TEST</title>
+  <link rel="stylesheet" href="styles/styles.css"/>
+</head>
+<body>
+  <div class="container">
+    
+    <header>
+      <nav class="nav">
+        <a href="#" class="nav--link">Home</a>
+        <a href="#" class="nav--link">About</a>
+        <a href="#" class="nav--link">Contact</a>
+      </nav>
+    </header>
+
+    <section class="main">
+      {{ content }}
+    </section>
+    
+    <footer>
+      FOOTER
+    </footer>
+
+  </div>
+
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+
+  <script>
+    $(document).ready(function() {
+      $(window).scroll(function() {
+          var height = $('.container').height();
+          var scrollTop = $(window).scrollTop();
+          if (scrollTop >= 30) {
+            $('nav').addClass('solid-nav');
+            $('.nav').removeClass('transparent-nav');
+          } else {
+            $('nav').addClass('transparent-nav');
+            $('.nav').removeClass('solid-nav');
+          }
+        });
+      });
+  </script>
+</body>
+
+</html>
