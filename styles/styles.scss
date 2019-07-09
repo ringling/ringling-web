@@ -1,7 +1,14 @@
 ---
 ---
 
+@import 'https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Playfair+Display:400,400i,700,700i,900,900i';
+@import "timeline";
+
+
 $headerHeight: 70px;
+$blue: #425BB5;
+$breakpoint: 1024px;
+
 // start content
 * {
   box-sizing: border-box;
@@ -14,9 +21,20 @@ body
   margin: 0;
 }
 
-.container {
+.wrapper {
   display: grid;
 }
+
+.wrapper {
+  background: url(../assets/img/home-bg-3.jpg);
+  background-size: cover;
+  height: 100vh;
+}
+
+
+
+
+
 footer {
   border-top: 1px solid #ccc;
   background-color: transparent;
@@ -28,6 +46,7 @@ nav {
   background-color: transparent;
   height: 100%;
 }
+
 @keyframes color_change {
 	from { background-color: transparent; }
 	to { background-color: white; }
@@ -58,12 +77,25 @@ header {
   width: 100%;
   height: $headerHeight;
   align-items: center;
-  
   background-color: transparent;
+  z-index: 100;
 }
 
+footer {
+  background-color: white;  
+  width: 100%;
+  height: $headerHeight;
+  align-items: center;
+  width: 100%;
+}
 
-.nav--link {
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.nav-link {
   margin-right: 10px;
   margin-left: 10px;
   padding-top: $headerHeight - ($headerHeight/2) - 10px;
@@ -79,3 +111,93 @@ header {
   padding-top: $headerHeight;
   display: grid;
 }
+
+.home {
+  background-color: transparent;
+}
+
+.about {
+  background-color: white;  
+}
+
+.experience {
+  background-color: #f3f3f3;
+}
+
+.home, .about, .experience {
+  padding: 50px;
+}
+
+@media only screen and (min-width: $breakpoint) {
+  .home, .about, .experience {
+    padding: 130px;
+  }
+}
+
+
+.about h1, .experience h1, .home h1 {  
+  font-family: 'Playfair Display', serif;
+  color: #333;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 50px;
+}
+
+@media only screen and (min-width: $breakpoint) {
+  .home h1 {  
+    font-size: 80px;
+    line-height: 70px;
+  }
+}
+
+
+@media only screen and (min-width: $breakpoint) {
+
+  .aboutContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .aboutImg {
+    width: 400px;    
+  }
+
+  .aboutContainer > div {
+    width: 50%;
+  }
+}
+
+.aboutImg {
+  width: 350px;
+  border: 10px solid $blue;
+
+}
+
+.aboutContainer > div  > img {
+  text-align: center;
+}
+
+h4 {
+  font-family: 'Lato', sans-serif;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  position: relative; 
+  color: $blue;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+// DASH before h4
+h4:before {
+  position: absolute;
+  width: 30px;
+  left: -40px;
+  content: "";
+  display: block;
+  height: 2px;
+  background: $blue;
+  top: 9px;
+  z-index: 1;
+}
+

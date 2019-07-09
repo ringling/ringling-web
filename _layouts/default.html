@@ -8,13 +8,15 @@
   <link rel="stylesheet" href="styles/styles.css"/>
 </head>
 <body>
-  <div class="container">
+  <div class="wrapper">
     
     <header>
       <nav class="nav">
-        <a href="#" class="nav--link">Home</a>
-        <a href="#" class="nav--link">About</a>
-        <a href="#" class="nav--link">Contact</a>
+        <a href="#" class="nav-link">Home</a>
+        <a href="#" class="nav-link">About</a>
+        <a href="#" class="nav-link">Experience</a>
+        <a href="#" class="nav-link">Projects</a>
+        <a href="#" class="nav-link">Contact</a>
       </nav>
     </header>
 
@@ -28,22 +30,39 @@
 
   </div>
 
+  
   <script
   src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
   crossorigin="anonymous"></script>
+  
+
+
+
 
   <script>
     $(document).ready(function() {
+      var height = $('.container').height();
+      var scrollTop = $(window).scrollTop();
+
+      if (scrollTop >= 30) {
+        $('nav').removeClass('transparent-nav');
+        $('nav').addClass('solid-nav');
+      }
+      else{
+        $('.nav').removeClass('solid-nav');
+        $('nav').addClass('transparent-nav');
+      }
+      
       $(window).scroll(function() {
           var height = $('.container').height();
           var scrollTop = $(window).scrollTop();
           if (scrollTop >= 30) {
+            $('nav').removeClass('transparent-nav');
             $('nav').addClass('solid-nav');
-            $('.nav').removeClass('transparent-nav');
           } else {
-            $('nav').addClass('transparent-nav');
             $('.nav').removeClass('solid-nav');
+            $('nav').addClass('transparent-nav');
           }
         });
       });
