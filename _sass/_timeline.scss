@@ -10,10 +10,11 @@ P.S: if you like my content maybe you will become a donator and donate some mone
 .timeline{
   --uiTimelineMainColor: var(--timelineMainColor, #222);
   --uiTimelineSecondaryColor: var(--timelineSecondaryColor, #fff);
-
   position: relative;
   padding-top: 3rem;
   padding-bottom: 3rem;
+  border-top: 3px solid var(--uiTimelineMainColor);
+  border-bottom: 3px solid var(--uiTimelineMainColor);
 }
 
 .timeline:before{
@@ -37,7 +38,8 @@ P.S: if you like my content maybe you will become a donator and donate some mone
 .timeline__year{
   padding: .5rem 1.5rem;
   color: var(--uiTimelineSecondaryColor);
-  background-color: var(--uiTimelineMainColor);
+  background-image: linear-gradient(to right,#4286f4, #425BB5);
+  
 
   position: absolute;
   left: 0;
@@ -72,7 +74,7 @@ P.S: if you like my content maybe you will become a donator and donate some mone
   padding: .5rem 1.5rem;
   text-align: center;
 
-  background-color: var(--uiTimelineMainColor);
+  background-image: linear-gradient(to right,#4286f4, #425BB5);
   color: var(--uiTimelineSecondaryColor);
 }
 

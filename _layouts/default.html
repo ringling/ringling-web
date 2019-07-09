@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="styles/styles.css"/>
 </head>
 <body>
-  <div class="wrapper">
+  <div class="container">
     
     <header>
       <nav class="nav">
@@ -25,22 +25,12 @@
       {{ content }}
     </section>
     
-    <footer>
-      FOOTER
-    </footer>
+    {% include footer.html %}
 
   </div>
 
-
-  <script
-  src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   
-
-
-
-
   <script>
     $(document).ready(function() {
       var height = $('.container').height();

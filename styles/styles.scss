@@ -21,29 +21,31 @@ body
   margin: 0;
 }
 
-.wrapper {
+.container {
   display: grid;
+  width: 100%;
 }
 
-.wrapper {
+.container {
   background: url(../assets/img/home-bg-3.jpg);
   background-size: cover;
   height: 100vh;
 }
 
-
-
-
-
-footer {
-  border-top: 1px solid #ccc;
-  background-color: transparent;
-}
+// @media only screen and (max-width: $breakpoint) {
+//   .container {
+//     background-size: cover;
+//     height: 170vh;
+//   }
+// }
 
 nav {
   display: flex;
   justify-content: center;
   background-color: transparent;
+  
+
+
   height: 100%;
 }
 
@@ -82,12 +84,24 @@ header {
 }
 
 footer {
-  background-color: white;  
-  width: 100%;
-  height: $headerHeight;
+  padding: 10px;
+  background-color: $blue;  
+  height: 40px;
   align-items: center;
   width: 100%;
+  border-top: 1px solid #ccc;
+  color: white;
+  // #373b44 → #4286f4
+  background-image: linear-gradient(to right,$blue, #4286f4);
+  background-image: linear-gradient(to right,#4286f4, $blue);
+
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 13px;
+  font-weight: bold;
 }
+
+
 
 p {
   font-family: 'Open Sans', sans-serif;
@@ -132,6 +146,10 @@ p {
   .home, .about, .experience {
     padding: 130px;
   }
+}
+
+.home h1 {
+  text-shadow: 2px 3px 0px #fff, 6px 6px 0px rgba(0,0,0,0.15);
 }
 
 
