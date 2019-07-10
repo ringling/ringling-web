@@ -17,12 +17,16 @@
               </div>
               <div class="timeline__post">
                 <div class="timeline__content">
-                  <h3>{{item.companyName}}</h3>
-                  <img src="{{item.companyLogo}}" width="80" class="img-responsive" alt="" />
-                  <p><b>{{item.title}}</b></p>
-                  <p>{{item.description}}</p>
-                  <p>{{item.roles}}</p>
-                  <p>{{item.timeFrom}} - {{item.timeTo}}</p>
+                  <div class="timelineHeader">
+                    <h3>{{item.companyName}}</h3>
+                    <span><img src="{{item.companyLogo}}" width="80" class="img-responsive" alt="" /></span>
+                  </div>
+                  <div class="timelineRole">
+                    <p style="margin-right: 10px"><b>{{item.title}}</b></p>
+                    <p>{{item.roles}}</p>
+                  </div>
+                  <p class="timeDescription">{{item.description}}</p>
+                  <p class="timeFromTo">{{item.timeFrom}} - {{item.timeTo}}</p>
                 </div>
               </div>
             </div>

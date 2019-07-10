@@ -8,6 +8,7 @@
 $headerHeight: 70px;
 $blue: #425BB5;
 $breakpoint: 1024px;
+$lightGrey:#8e9eab;
 
 // start content
 * {
@@ -186,7 +187,7 @@ p {
 
 .aboutImg {
   width: 350px;
-  border: 10px solid $blue;
+  border: 10px solid $lightGrey;
 
 }
 

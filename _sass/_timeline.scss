@@ -246,3 +246,24 @@ p:last-child{
     display: none;
   } 
 }
+
+.timeline__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.timelineHeader, .timelineRole {
+  display: flex;
+  justify-content: space-between;
+}
+
+.timeFromTo {
+  border-top: 1px solid $lightGrey;
+  padding-top: 5px;
+}
+
+.timeDescription {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+}
