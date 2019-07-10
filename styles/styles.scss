@@ -28,6 +28,9 @@ body
   background: url(../assets/img/home-bg-3.jpg);
   background-size: cover;
   height: 100vh;
+
+  flex-direction: column;
+  align-content: space-between;
 }
 
 header {
@@ -109,6 +112,7 @@ footer {
   letter-spacing: 2px;
   font-size: 13px;
   font-weight: bold;
+  
 }
 
 p {
@@ -126,7 +130,7 @@ p {
   background-color: transparent;
 }
 
-.about {
+.about, .now {
   background-color: white;  
 }
 
@@ -135,13 +139,13 @@ p {
 }
 
 @media only screen and (min-width: 350px) {
-  .home, .about, .experience {
+  .home, .about, .experience, .now {
     padding: 10px;
   }
 }
 
 @media only screen and (min-width: $breakpoint) {
-  .home, .about, .experience {
+  .home, .about, .experience, .now {
     padding: 130px;
   }
 }
@@ -151,7 +155,7 @@ p {
 }
 
 
-.about h1, .experience h1, .home h1 {  
+.about h1, .experience h1, .home h1, .now h1 {  
   font-family: 'Playfair Display', serif;
   color: #333;
   font-weight: 500;
