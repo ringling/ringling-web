@@ -16,6 +16,10 @@
                 <span class="timeline__month">{{item.timeFrom | split: " " | last}}</span>
               </div>
               <div class="timeline__post">
+
+                
+                
+                
                 <div class="timeline__content">
                   <div class="timelineHeader">
                     <h3>{{item.companyName}}</h3>
@@ -25,8 +29,13 @@
                     <p style="margin-right: 10px"><b>{{item.title}}</b></p>
                     <p>{{item.roles}}</p>
                   </div>
-                  <p class="timeDescription">{{item.description}}</p>
-                  <p class="timeFromTo">{{item.timeFrom}} - {{item.timeTo}}</p>
+
+                  <a class="collapsible">Read more</a>
+                  <div class="content">
+                    <p class="timeDescription">{{item.description}}</p>
+                    <p class="timeFromTo">{{item.timeFrom}} - {{item.timeTo}}</p>
+                  </div>
+
                 </div>
               </div>
             </div>
@@ -39,3 +48,21 @@
     </div>
   </div>
   
+
+
+<script>
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+  
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.maxHeight){
+        content.style.maxHeight = null;
+      } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+      } 
+    });
+  }
+</script>

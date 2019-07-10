@@ -3,11 +3,11 @@
     "year": "2019",
     "timeFrom": "June 2019",
     "timeTo": "Present",
-    "companyName": "xwave ",
+    "companyName": "xwave",
     "companyLogo": "assets/img/xwave.png",
     "title": "Partner",
-    "roles": "", 
-    "description": "Lorem ipsum...</p>"
+    "roles": "Software Developer", 
+    "description": "Quam lectus viverra temporibus nulla id, et a quis convallis cumque, vitae diam mollis consectetuer, amet justo justo justo maecenas, posuere vestibulum justo auctor erat vestibulum. Praesent laoreet sed in quisque, interdum praesent est sapien sit egestas arcu, rutrum ultrices maecenas eget class.</p>"
   },
   {
     "year": "2018",
@@ -46,7 +46,7 @@
     "companyName": "Nykredit",
     "companyLogo": "assets/img/nykredit.png",
     "title": "Freelance consultant",
-    "roles": "Software developer", 
+    "roles": "Software Developer", 
     "description": "Lorem ipsum...</p>"
   },
   {
