@@ -16,7 +16,6 @@
         <a href="#" class="nav-link">About</a>
         <a href="#" class="nav-link">Experience</a>
         <a href="#" class="nav-link">Projects</a>
-        <a style="color: orangered; font-size: 7pt" class="nav-link">UNDER DEVELOPMENT</a>
       </nav>
     </header>
 
@@ -40,7 +39,7 @@
         $('nav').addClass('solid-nav');
       }
       else{
-        $('.nav').removeClass('solid-nav');
+        $('nav').removeClass('solid-nav');
         $('nav').addClass('transparent-nav');
       }
       
@@ -49,9 +48,9 @@
           var scrollTop = $(window).scrollTop();
           if (scrollTop >= 30) {
             $('nav').removeClass('transparent-nav');
-            $('nav').addClass('solid-nav');
+            $('nav').addClass('solid-nav');                 
           } else {
-            $('.nav').removeClass('solid-nav');
+            $('nav').removeClass('solid-nav');
             $('nav').addClass('transparent-nav');
           }
         });

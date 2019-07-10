@@ -48,35 +48,33 @@ nav {
   height: 100%;
 }
 
-// @keyframes color_change {
-// 	from { 
-//     background: linear-gradient(to right,transparent, transparent); 
-//   }
-// 	to { 
-//     background: linear-gradient(to right,#8e9eab, transparent); 
-//   }
-// }
-// @keyframes invert_color_change {
-// 	from { 
-//     background: linear-gradient(to right,#8e9eab, transparent); 
-//   }
-// 	to { 
-//     background: linear-gradient(to right,transparent, transparent); 
-//   }
-// }
+@keyframes color_change {
+	from { 
+    background-color: transparent;
+  }
+	to { 
+    background-color: $lightGrey;
+  }
+}
+@keyframes invert_color_change {
+	from { 
+    background-color: $lightGrey;
+  }
+	to { 
+    background-color: transparent;
+  }
+}
 
 .solid-nav {
-  // animation-name: color_change;
-  // animation-duration: .5s;
-  border-bottom: 1px solid #ccc;
-  background: linear-gradient(to right,#8e9eab, transparent);
+  animation-name: color_change;
+  animation-duration: .5s;
+  background-color: $lightGrey;
 }
 
 .transparent-nav {
-  // animation-name: invert_color_change;
-  // animation-duration: .5s;
-  border-bottom: 1px solid transparent;
-  background: linear-gradient(to right,transparent, transparent);
+  animation-name: invert_color_change;
+  animation-duration: .5s;
+  background-color: transparent;
 }
 
 .nav-link {
@@ -85,10 +83,13 @@ nav {
   padding-top: $headerHeight - ($headerHeight/2) - 10px;
   text-transform: uppercase;
   letter-spacing: 2px;
-  color: #444;
+
   font-size: 11px;
   font-weight: bold;
   text-decoration: none;
+
+  color: black;
+  color: #444;
 }
 
 footer {
@@ -97,7 +98,7 @@ footer {
   height: 40px;
   align-items: center;
   width: 100%;
-  border-top: 1px solid #ccc;
+  // border-top: 1px solid #ccc;
   color: white;
 
   // background-image: linear-gradient(to right,$blue, #4286f4);
