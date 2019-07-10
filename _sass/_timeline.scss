@@ -5,7 +5,8 @@
 P.S: if you like my content maybe you will become a donator and donate some money? That helps me to create new awesome materials. https://www.paypal.me/melnik909
 */
 
-
+$lightGrey:#8e9eab;
+$yearBlue: #425BB5;
 
 .timeline{
   --uiTimelineMainColor: var(--timelineMainColor, #222);
@@ -38,8 +39,9 @@ P.S: if you like my content maybe you will become a donator and donate some mone
 .timeline__year{
   padding: .5rem 1.5rem;
   color: var(--uiTimelineSecondaryColor);
-  background-image: linear-gradient(to right,#4286f4, #425BB5);
-  
+  // background-image: linear-gradient(to right,#4286f4, $yearBlue);
+  background-color: $lightGrey;
+  background-color: $yearBlue;
 
   position: absolute;
   left: 0;
@@ -74,7 +76,8 @@ P.S: if you like my content maybe you will become a donator and donate some mone
   padding: .5rem 1.5rem;
   text-align: center;
 
-  background-image: linear-gradient(to right,#4286f4, #425BB5);
+  // background-image: linear-gradient(to right,#4286f4, $yearBlue);
+  background-color: $lightGrey;
   color: var(--uiTimelineSecondaryColor);
 }
 
@@ -148,7 +151,7 @@ P.S: if you like my content maybe you will become a donator and donate some mone
 }
 
 .timeline{
-  --timelineMainColor: #425BB5;
+  --timelineMainColor: #8e9eab;
   font-size: 16px;
 }
 
