@@ -107,6 +107,23 @@ footer {
   letter-spacing: 2px;
   font-size: 13px;
   font-weight: bold;  
+  div {
+    display: flex;
+    justify-content: space-between;
+    p {
+      a {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      
+        font-weight: bold;
+        text-decoration: none;
+      
+        color: black;
+        color: #444;
+      }
+    }
+  }
+
 }
 
 p {
