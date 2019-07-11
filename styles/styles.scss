@@ -101,18 +101,12 @@ footer {
   height: 40px;
   align-items: center;
   width: 100%;
-  // border-top: 1px solid #ccc;
   color: white;
-
-  // background-image: linear-gradient(to right,$blue, #4286f4);
-  // background-image: linear-gradient(to right,#4286f4, $blue);
   background-image: linear-gradient(to right,#8e9eab, #eef2f3);
-
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 13px;
-  font-weight: bold;
-  
+  font-weight: bold;  
 }
 
 p {
@@ -128,8 +122,17 @@ p {
 
 .home {
   background-color: transparent;
+  p {
+    color: black;
+    letter-spacing: 2px;
+    font-size: 16px;
+    text-shadow: 1px 1px 2px white, 0 0 1em $lightGrey, 0 0 0.2em $lightGrey;
+  }
 }
 
+.home h1 {
+  text-shadow: 1px 1px 2px white, 0 0 1em $lightGrey, 0 0 0.2em $lightGrey;  
+}
 .about, .now {
   background-color: white;  
 }
@@ -150,11 +153,6 @@ p {
   }
 }
 
-.home h1 {
-  text-shadow: 2px 3px 0px #fff, 6px 1px 0px rgba(0,0,0,0.15);
-}
-
-
 .about h1, .experience h1, .home h1, .now h1 {  
   font-family: 'Playfair Display', serif;
   color: #333;
@@ -170,9 +168,7 @@ p {
   }
 }
 
-
 @media only screen and (min-width: $breakpoint) {
-
   .aboutContainer {
     display: flex;
     justify-content: space-between;
@@ -191,7 +187,6 @@ p {
 .aboutImg {
   width: 350px;
   border: 10px solid $lightGrey;
-
 }
 
 .aboutContainer > div  > img {
@@ -208,7 +203,7 @@ h4 {
   font-size: 18px;
 }
 
-// DASH before h4
+// Dash before h4
 h4:before {
   position: absolute;
   width: 30px;
@@ -220,4 +215,3 @@ h4:before {
   top: 9px;
   z-index: 1;
 }
-
