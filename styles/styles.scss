@@ -26,6 +26,7 @@ body
   display: grid;
   width: 100%;
   background: url(../assets/img/home-bg-3.jpg);
+  background: url(../assets/img/home-bg-1.jpg);
   background-size: cover;
   height: 100vh;
 
@@ -97,12 +98,12 @@ nav {
 
 footer {
   padding: 10px;
-  background-color: $blue;  
+
   height: 40px;
   align-items: center;
   width: 100%;
   color: white;
-  background-image: linear-gradient(to right,#8e9eab, #eef2f3);
+  background-image: linear-gradient(to right,#8e9eab, transparent);
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 13px;
@@ -120,6 +121,7 @@ footer {
       
         color: black;
         color: #444;
+
       }
     }
   }
@@ -144,11 +146,13 @@ p {
     letter-spacing: 2px;
     font-size: 16px;
     text-shadow: 1px 1px 2px white, 0 0 1em $lightGrey, 0 0 0.2em $lightGrey;
+    text-align: right;
   }
 }
 
 .home h1 {
   text-shadow: 1px 1px 2px white, 0 0 1em $lightGrey, 0 0 0.2em $lightGrey;  
+  text-align: right;
 }
 .about, .now {
   background-color: white;  
@@ -217,7 +221,7 @@ h4 {
   position: relative; 
   color: $blue;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 // Dash before h4
