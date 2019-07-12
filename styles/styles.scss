@@ -172,6 +172,7 @@ p, li {
 @media only screen and (min-width: $breakpoint) {
   .home, .about, .experience, .now {
     padding: 130px;
+    padding-top: 40px;
   }
 }
 
@@ -236,4 +237,50 @@ h4:before {
   background: $blue;
   top: 9px;
   z-index: 1;
+}
+
+.doingList {
+  * {margin: 0; padding: 0;}
+
+  div {
+    margin: 20px;
+  }
+
+  ul {
+    list-style-type: none;
+    width: 100%;
+  }
+
+
+  ul:nth-child(1) {
+    border-top: 1px solid $lightGrey
+  }
+
+  h3 {
+    font: bold 20px/1.5 'Lato', sans-serif;
+  }
+
+
+  li img {
+    float: right;
+    margin: 0 15px 0 0;
+  }
+
+  li p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  li {
+    padding: 10px;
+    overflow: auto;
+    border-bottom: 1px solid $lightGrey
+  }
+
+
+  li:hover {
+    background: #eee;
+    cursor: pointer;
+  }
 }
