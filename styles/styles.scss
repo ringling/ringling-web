@@ -253,12 +253,13 @@ h4:before {
 
 
   ul:nth-child(1) {
-    border-top: 1px solid $lightGrey
+    border-top: 1px solid#f0f0f0;
   }
 
   h3 {
     font: bold 20px/1.5 'Lato', sans-serif;
   }
+
 
 
   li img {
@@ -275,7 +276,7 @@ h4:before {
   li {
     padding: 10px;
     overflow: auto;
-    border-bottom: 1px solid $lightGrey
+    border-bottom: 1px solid #f0f0f0;
   }
 
 
