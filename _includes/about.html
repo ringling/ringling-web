@@ -6,13 +6,10 @@
   <div class="aboutContainer">
 
     <div>            
-      <p>
-        Lifetime learner and polyglot software craftsman with a great love for music and nature. 
-      </p>
-      <p>
-        Thriving in environentments and cultures who value competences, empowerment, innovation and creativity. 
-      </p>
-
+      {% assign summary_lines = site.data.cv.basics.summary %}
+      {% for line in summary_lines %}  
+        <p>{{line}}</p>
+      {% endfor %}
       <div class="sign"></div>
     </div>
     

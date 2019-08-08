@@ -1,12 +1,12 @@
 {
   "basics": {
+    "dob": "1972-02-12",
     "name": "Thomas Ringling",
     "label": "Software Developer",
     "picture": "",
     "email": "thomas@ringling.info",
     "phone": "+45 6169 9351",
     "website": "http://ringling.info",
-    "summary": "A summary of John Doe...",
     "location": {
       "address": "Nærum Hovedgade 15 st. th. D",
       "postalCode": "2850",
@@ -28,8 +28,11 @@
     ],
     "summary":[
       "Living in Nærum with my wife Louise and my daughter Hannah.",
-      "I have 19 years of experience in software development within programming, architecture and leadership etc.",
-      "Thriving in environentments and cultures who value competences, innovation and creativity."
+      "Lifetime learner and polyglot software craftsman with a great love for physical training, music and nature.",
+      "A long experience implementing and teaching agile methodologies and principles.",
+      "With over 19 years of experience on software development, I span a variety of different technologies, paradigms and programming languages.",
+      "I have had many roles within and outside IT, such as developer, coach, teacher, architect, project manager, scrum master, product owner and team lead",
+      "As I still do software development, I keep up with new technologies and therefore thrive in environentments and cultures who value competences, innovation and creativity."
     ]
   },
   "languages": [
@@ -204,7 +207,6 @@
       }
     ]
   },
-  "certificates": [],
   "skills": [
     "_description": "Defines a skill. A Skill has a description and may be accompanied by sutiable documentation. Morever a Skill may be acquired during one or more experience periods, and be verified by one or more certificates",
     {
